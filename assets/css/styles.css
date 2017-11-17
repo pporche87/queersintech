@@ -87,6 +87,7 @@ header {
   padding: 35px 100px 0;
   animation: 0s fadein 0.5s forwards;
   opacity: 0;
+  z-index: 1;
 }
 
 @keyframes fadein {
@@ -192,7 +193,7 @@ header nav li {
 
 /* ABOUT SECTION */
 
-.about .grid li {
+#about .grid li {
   height: 350px;
   padding: 20px;
   background-clip: content-box;
@@ -200,47 +201,47 @@ header nav li {
   background-position: center;
 }
 
-.about .grid li.small {
+#about .grid li.small {
   flex-basis: 30%;
 }
 
-.about .grid li.large {
+#about .grid li.large {
   flex-basis: 70%;
 }
 
 @media (max-width: 1100px) {
-  .about .grid li.small,
-  .about .grid li.large {
+  #about .grid li.small,
+  #about .grid li.large {
     flex-basis: 50%;
   }
 }
 
 @media (max-width: 800px) {
-  .about .grid li.small,
-  .about .grid li.large {
+  #about .grid li.small,
+  #about .grid li.large {
     flex-basis: 100%;
   }
 }
 
 /* EVENTS SECTION */
 
-.events .grid li {
+#events .grid li {
   padding: 50px;
   flex-basis: 50%;
   text-align: center;
 }
 
-.events .grid li i {
+#events .grid li i {
   color: #8c9eff;
 }
 
-.events .grid li h4 {
+#events .grid li h4 {
   font-size: 30px;
   margin: 25px;
 }
 
 @media (max-width: 800px) {
-  .events .grid li {
+  #events .grid li {
     flex-basis: 100%;
     padding: 20px;
   }
@@ -248,7 +249,7 @@ header nav li {
 
 /* CONTRIBUTORS SECTION */
 
-.contributors .quote {
+#contributors .quote {
   font-size: 22px;
   font-weight: 300;
   line-height: 1.5;
@@ -256,39 +257,23 @@ header nav li {
 }
 
 @media (max-width: 800px) {
-  .contributors .quote {
+  #contributors .quote {
     font-size: 18px;
     margin: 15px 0;
   }
-  .contributors .author {
+  #contributors .author {
     font-size: 14px;
   }
 }
 
 /* CONTACT SECTION */
 
-.contact form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 60%;
-}
-
-.contact form .btn {
+#contact .btn {
   padding: 18px 42px;
 }
 
-.contact form input {
-  padding: 15px;
-  margin-right: 30px;
-  font-size: 18px;
-  color: #555;
-  flex: 1;
-}
-
 @media (max-width: 1000px) {
-  .contact form input {
+  #contact form input {
     flex-basis: 100%;
     margin: 0 0 20px 0;
   }
