@@ -7,6 +7,8 @@ Queers in Tech is a community based project created by [Patrick Porche](https://
 
 We believe that queers are extrordinary human beings! We contribute a diversity of experiences, identities, backgrounds and contribute a unique perspective to the tech industry. We are engineers, diversity managers, CEO's, customer service representatives, founders, students and visionaries. Our goal is to bring together this community to share experiences, ideas and potentially collaborate together to make tech industury more inclusive and a better partner to the commmunities in exists within.
 
+![QueersInTech Gif](/public/queersintech.gif)
+
 ## Want to contribute? 🤓
 
 Host a meetup? 💃🏾
