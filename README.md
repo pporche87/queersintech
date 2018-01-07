@@ -15,3 +15,9 @@ Host a meetup? 💃🏾
 Write a medium article? ✏️
 
 Contact us at queersintech@gmail.com 
+
+## Setting up Development Environment 
+1. Fork and clone repository
+1. `npm install`
+1. `npm run client:install`
+1. `npm run dev`

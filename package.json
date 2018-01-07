@@ -4,7 +4,11 @@
   "description": "An inclusive community of queers and allies in technology",
   "main": "index.js",
   "scripts": {
+    "client:install": "cd client && npm install",
     "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +22,7 @@
   },
   "homepage": "https://github.com/pporche87/queersintech#readme",
   "dependencies": {
+    "concurrently": "^3.5.1",
     "express": "^4.16.2"
   },
   "devDependencies": {
