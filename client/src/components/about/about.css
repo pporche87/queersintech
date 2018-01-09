@@ -1,0 +1,41 @@
+#about .grid li {
+  height: 350px;
+  padding: 20px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+#about .grid li.small_1 {
+  flex-basis: 30%;
+  background-image: url(../../img/queer1.jpg);
+}
+
+#about .grid li.large_1 {
+  flex-basis: 70%;
+  background-image: url(../../img/queer2.jpg);
+}
+
+#about .grid li.small_2 {
+  flex-basis: 30%;
+  background-image: url(../../img/queer4.jpg);
+}
+
+#about .grid li.large_2 {
+  flex-basis: 70%;
+  background-image: url(../../img/queer3.jpg);
+}
+
+@media (max-width: 1100px) {
+  #about .grid li.small,
+  #about .grid li.large {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  #about .grid li.small,
+  #about .grid li.large {
+    flex-basis: 100%;
+  }
+}

@@ -2,10 +2,13 @@
   "name": "queersintech",
   "version": "1.0.0",
   "description": "An inclusive community of queers and allies in technology",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -18,9 +21,11 @@
   },
   "homepage": "https://github.com/pporche87/queersintech#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "font-awesome": "^4.7.0"
   },
   "devDependencies": {
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.14.9"
   }
 }
