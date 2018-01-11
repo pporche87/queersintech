@@ -1,14 +1,23 @@
 const express = require('express')
+const Buffer = require('buffer').Buffer
+require('dotenv').config()
+require('isomorphic-fetch')
 
 const app = express()
 
-app.get('/api/customers', (req, res) => {
-  const customers = [
-    {id: 1, firstName: 'Mike', lastName: 'Masterson'},
-    {id: 2, firstName: 'Patrick', lastName: 'Porche'},
-    {id: 3, firstName: 'Jane', lastName: 'Doe'}
-  ]
-  res.json(customers)
+app.get('/api/github', (req, res) => {
+
+  const url = 'https://api.github.com/repos/pporche87/queersintech/collaborators'
+
+  fetch(url, {
+    headers: {
+      'Authorization': `Basic ${new Buffer('process.env.USER:process.env.PASS').toString('base64')}`
+    }
+  })
+  .then((data) => {
+    return data.json()
+  })
+  .then(data => res.json(data))
 })
 
 const port = 5000
