@@ -1,5 +1,4 @@
 const express = require('express')
-const Buffer = require('buffer').Buffer
 require('dotenv').config()
 require('isomorphic-fetch')
 
@@ -11,7 +10,7 @@ app.get('/api/github', (req, res) => {
 
   fetch(url, {
     headers: {
-      'Authorization': `Basic ${new Buffer('process.env.USER:process.env.PASS').toString('base64')}`
+      'Authorization': `token ${process.env.OAUTH}`
     }
   })
   .then((data) => {
