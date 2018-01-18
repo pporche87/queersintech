@@ -22,8 +22,11 @@
   "homepage": "https://github.com/pporche87/queersintech#readme",
   "dependencies": {
     "concurrently": "^3.5.1",
+    "dotenv": "^4.0.0",
+    "es6-promise": "^4.2.2",
     "express": "^4.16.2",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {
     "nodemon": "^1.14.9"
