@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -74,10 +74,10 @@ section p {
   section {
     padding: 50px 20px;
   }
-}
+} */
 
 /* HEADER STYLES */
-
+/* 
 header {
   position: absolute;
   width: 100%;
@@ -117,11 +117,11 @@ header nav li {
   header h2 {
     margin-bottom: 15px;
   }
-}
+} */
 
 /* HERO STYLES */
 
-.hero {
+/* .hero {
   position: relative;
   justify-content: center;
   text-align: center;
@@ -189,11 +189,11 @@ header nav li {
   .hero a.btn {
     padding: 15px 40px;
   }
-}
+} */
 
 /* ABOUT SECTION */
 
-#about .grid li {
+/* #about .grid li {
   height: 350px;
   padding: 20px;
   background-clip: content-box;
@@ -221,11 +221,11 @@ header nav li {
   #about .grid li.large {
     flex-basis: 100%;
   }
-}
+} */
 
 /* EVENTS SECTION */
 
-#events .grid li {
+/* #events .grid li {
   padding: 50px;
   flex-basis: 50%;
   text-align: center;
@@ -245,11 +245,11 @@ header nav li {
     flex-basis: 100%;
     padding: 20px;
   }
-}
+} */
 
 /* CONTRIBUTORS SECTION */
 
-#contributors .quote {
+/* #contributors .quote {
   font-size: 22px;
   font-weight: 300;
   line-height: 1.5;
@@ -264,11 +264,11 @@ header nav li {
   #contributors .author {
     font-size: 14px;
   }
-}
+} */
 
 /* CONTACT SECTION */
 
-#contact .btn {
+/* #contact .btn {
   padding: 18px 42px;
 }
 
@@ -277,11 +277,11 @@ header nav li {
     flex-basis: 100%;
     margin: 0 0 20px 0;
   }
-}
+} */
 
 /* FOOTER SECTION */
 
-footer {
+/* footer {
   display: flex;
   align-content: center;
   justify-content: space-around;
@@ -317,4 +317,4 @@ footer p {
   footer ul li {
     margin: 0 8px;
   }
-}
+} */
