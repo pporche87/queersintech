@@ -23,7 +23,9 @@
   "dependencies": {
     "concurrently": "^3.5.1",
     "express": "^4.16.2",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "react": "^16.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "nodemon": "^1.14.9"

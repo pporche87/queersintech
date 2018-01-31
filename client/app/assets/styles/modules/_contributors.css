@@ -1,0 +1,21 @@
+.Contributors {
+  & .page {
+    & .quote {
+      font-size: 18px;
+      margin: 15px 0;
+      font-weight: 300;
+      line-height: 1.5;
+      @mixin atMedium {
+        font-size: 22px;
+        margin: 40px 0px;
+
+      }
+    }
+    & .author {
+      font-size: 14px;
+      @mixin atMedium {
+        font-size: initial
+      }
+    }
+  }
+}
