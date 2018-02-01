@@ -1,0 +1,50 @@
+.About {
+  & .page {
+    &--grid{
+      &-item {
+        height: 350px;
+        padding: 20px;
+        background-clip: content-box;
+        background-size: cover;
+        background-position: center;
+        flex-basis: 100%;
+        opacity: 0;
+        animation: 1s fadein ease-out forwards;
+
+        @mixin atMedium {
+          flex-basis: 50%;
+        }
+
+        @mixin atLarge {
+          &-small {
+            flex-basis: 30%;
+          }
+          &-large {
+            flex-basis: 70%;
+          }
+        }
+
+        &-small:nth-of-type(1) {
+          background-image: url(../../assets/images/queer1.jpg);
+        }
+        &-large:nth-of-type(2) {
+          animation-delay: .25s;
+          background-image: url(../../assets/images/queer2.jpg);
+        }
+        &-large:nth-of-type(3) {
+          animation-delay: .5s;
+          background-image: url(../../assets/images/queer3.jpg);
+        }
+        &-small:nth-of-type(4) {
+          animation-delay: .75s;
+          background-image: url(../../assets/images/queer4.jpg);
+        }
+      }
+    } 
+  }
+}
+
+@keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}

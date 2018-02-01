@@ -1,0 +1,53 @@
+.Contact {
+  &--form {
+    &-holder {
+      position: relative;
+      left: 1px;
+      width: 100vw;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: darkgrey;
+      &-shadow {
+        position: absolute;
+        height: 1px;
+        box-shadow: 1px 1px 5px black;
+        width: 100%;
+        &-top {
+          top: -0px;
+        }
+        &-bottom {
+          bottom: .5px;
+        }
+      }
+    }
+    & input, textarea {
+      display: block;
+      border-radius: 1px;
+      padding: 5px;
+      margin: 5px 25px;
+      width: calc(100% - 50px);
+      resize: none;
+      border: none;
+      box-shadow: 1px 1px 5px black;
+    }
+    &-message {
+      height: 200px;
+    }
+    &-submit {
+      /* height: 200px; */
+      margin: 5px 25px;
+      background-color: rgb(22, 145, 182);
+      padding: 10px;
+      color: white;
+      border: none;      
+      box-shadow: 1px 1px 5px black;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  #contact form input {
+    flex-basis: 100%;
+    margin: 0 0 20px 0;
+  }
+}

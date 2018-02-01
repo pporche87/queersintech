@@ -1,0 +1,49 @@
+.Events {
+  & .page {
+    &--grid {
+      & li {  
+        flex-basis: 100%;
+        padding: 20px;
+        text-align: center;
+        
+        @mixin atMedium {
+          padding: 50px;
+          flex-basis: 50%;
+        }
+
+        & h4 {
+          font-size: 30px;
+          margin: 25px;
+        }
+
+        & i {
+          color: #8c9eff;
+          opacity: 0;
+          animation: 1s fadein ease-out forwards;
+
+          &.fa-handshake-o {
+            animation-delay: .25s;
+          }
+          &.fa-glass {
+            animation-delay: .5s;
+            @mixin atMedium {
+              animation-delay: .25s;
+            }
+          }
+          &.fa-medium {
+            animation-delay: .75s;
+            @mixin atMedium {
+              animation-delay: .5s;
+            }
+          }
+          &.fa-file-code-o {
+            animation-delay: 1s;
+            @mixin atMedium {
+              animation-delay: .5s;
+            }
+          }
+        }
+      }
+    }
+  }
+}  

@@ -1,0 +1,68 @@
+.Hero {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  color: #fff;
+  height: 100vh;
+  user-select: none;  
+
+  &--backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-color: #000;
+    opacity: 0;
+    animation: 1s backfadein 0.5s forwards;
+    background-image: url('../../assets/images/main.jpg');
+  }
+
+  &--contentArea {
+    opacity: 0;
+    position: relative;
+    top: 40vh;
+    transform: translateY(-50%);
+    animation: 1s slidefade 1s forwards;
+  }
+
+  & h1 {
+    font: bold 60px "Open Sans", sans-serif;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px #696969;
+    @mixin atMedium {
+      font-size: 48px;
+    }
+  }
+  
+  & h3 {
+    font: normal 28px "Open Sans", sans-serif;
+    margin-bottom: 40px;
+    @mixin atMedium {
+      font-size: 24px;
+    }
+  }
+
+  & a.btn {
+    padding: 20px 46px;
+    @mixin atMedium {
+      padding: 15px 40px;
+    }
+  }
+}
+
+@keyframes backfadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+    margin: 0;
+  }
+}
