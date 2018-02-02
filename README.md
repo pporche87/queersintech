@@ -13,5 +13,6 @@ We believe that queers are extrordinary human beings! We contribute a diversity 
 
 Host a meetup? 💃🏾
 Write a medium article? ✏️
+If you want to contribute code 💻, head over to the [Contributing Guidelines](CONTRIBUTING.md)
 
-Contact us at queersintech@gmail.com 
+Contact us at queersintech@gmail.com
