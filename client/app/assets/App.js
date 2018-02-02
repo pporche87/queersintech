@@ -9,7 +9,8 @@ import Occasion from './components/Occasion';
 import Contributors from './components/Contributors';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+import ErrorBoundary from './components/Footer';
 // import Lyft from './components/Lyft';
 import { log } from 'util';
 
@@ -61,7 +62,7 @@ class App extends Component {
     return (
       <div className="App">
         <Route path='/' component={Header} />
-        <Route exact path='/' render={props => 
+        <Route exact path='/' render={props =>
           getPage(props.location.hash)
         } />
         <Footer />
