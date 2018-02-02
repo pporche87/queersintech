@@ -436,6 +436,11 @@ nav {
               -webkit-animation-delay: .5s;
                       animation-delay: .5s
           }
+  }.btn {
+   padding: 20px 46px;
+ }@media(min-width: 800px) {.btn {
+     padding: 15px 40px
+ }
   }.footer {
   position: relative;
   -ms-flex-line-pack: center;
@@ -807,4 +812,46 @@ nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }.Occasion .page--grid li {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        padding: 20px;
+        text-align: center;
+      }@media(min-width: 800px) {.Occasion .page--grid li {
+          padding: 50px;
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%
+      }
+  }.Occasion .page--grid li h4 {
+          font-size: 30px;
+          margin: 25px;
+        }.Occasion .page--grid li i {
+          color: #8c9eff;
+          opacity: 0;
+          -webkit-animation: 1s fadein ease-out forwards;
+                  animation: 1s fadein ease-out forwards;
+        }.Occasion .page--grid li i.fa-handshake-o {
+            -webkit-animation-delay: .25s;
+                    animation-delay: .25s;
+          }.Occasion .page--grid li i.fa-glass {
+            -webkit-animation-delay: .5s;
+                    animation-delay: .5s;
+          }@media(min-width: 800px) {.Occasion .page--grid li i.fa-glass {
+              -webkit-animation-delay: .25s;
+                      animation-delay: .25s
+          }
+  }.Occasion .page--grid li i.fa-medium {
+            -webkit-animation-delay: .75s;
+                    animation-delay: .75s;
+          }@media(min-width: 800px) {.Occasion .page--grid li i.fa-medium {
+              -webkit-animation-delay: .5s;
+                      animation-delay: .5s
+          }
+  }.Occasion .page--grid li i.fa-file-code-o {
+            -webkit-animation-delay: 1s;
+                    animation-delay: 1s;
+          }@media(min-width: 800px) {.Occasion .page--grid li i.fa-file-code-o {
+              -webkit-animation-delay: .5s;
+                      animation-delay: .5s
+          }
   }

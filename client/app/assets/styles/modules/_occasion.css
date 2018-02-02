@@ -1,26 +1,22 @@
-.Events {
+.Occasion {
   & .page {
     &--grid {
-      & li {  
+      & li {
         flex-basis: 100%;
         padding: 20px;
         text-align: center;
-        
         @mixin atMedium {
           padding: 50px;
           flex-basis: 50%;
         }
-
         & h4 {
           font-size: 30px;
           margin: 25px;
         }
-
         & i {
           color: #8c9eff;
           opacity: 0;
           animation: 1s fadein ease-out forwards;
-
           &.fa-handshake-o {
             animation-delay: .25s;
           }
@@ -46,11 +42,4 @@
       }
     }
   }
-}  
-
- .btn {
-   padding: 20px 46px;
-   @mixin atMedium {
-     padding: 15px 40px;
-   }
- }
+}
