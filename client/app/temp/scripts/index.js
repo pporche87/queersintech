@@ -19151,6 +19151,10 @@ var _App = __webpack_require__(101);
 
 var _App2 = _interopRequireDefault(_App);
 
+var _ErrorBoundary = __webpack_require__(168);
+
+var _ErrorBoundary2 = _interopRequireDefault(_ErrorBoundary);
+
 var _reactRouterDom = __webpack_require__(8);
 
 var _util = __webpack_require__(87);
@@ -19160,7 +19164,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _reactDom2.default.render(_react2.default.createElement(
   _reactRouterDom.BrowserRouter,
   null,
-  _react2.default.createElement(_App2.default, null)
+  _react2.default.createElement(
+    _ErrorBoundary2.default,
+    null,
+    _react2.default.createElement(_App2.default, null)
+  )
 ), document.getElementById('root'));
 
 /***/ }),
@@ -42136,7 +42144,7 @@ var Occasion = function (_Component) {
 
     //   fetch(`https://api.lyft.com/oauth/authorize?client_id=${LYFT_CLIENT_ID}&scope=public%20profile%20rides.read%20rides.request%20offline&state=<state_string>&response_type=code`);
 
-    //   // fetch('https://api.lyft.com/oauth/token', { 
+    //   // fetch('https://api.lyft.com/oauth/token', {
     //   //   method: 'POST',
     //   //   headers: new Headers({
     //   //     'Content-Type': 'application/json'
@@ -48709,6 +48717,70 @@ if (typeof Object.create === 'function') {
   }
 }
 
+
+/***/ }),
+/* 168 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ErrorBoundary = function (_Component) {
+  _inherits(ErrorBoundary, _Component);
+
+  function ErrorBoundary(props) {
+    _classCallCheck(this, ErrorBoundary);
+
+    var _this = _possibleConstructorReturn(this, (ErrorBoundary.__proto__ || Object.getPrototypeOf(ErrorBoundary)).call(this, props));
+
+    _this.state = {
+      hasError: false
+    };
+    return _this;
+  }
+
+  _createClass(ErrorBoundary, [{
+    key: "componentDidCatch",
+    value: function componentDidCatch(error, info) {
+      this.setState({
+        hasError: true
+      });
+
+      console.error(error, info);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      if (this.state.hasError) {
+        return _react2.default.createElement("img", { src: "http://www.pinknews.co.uk/images/2014/01/Children-404_logo.png" });
+      }
+
+      return this.props.children;
+    }
+  }]);
+
+  return ErrorBoundary;
+}(_react.Component);
+
+exports.default = ErrorBoundary;
 
 /***/ })
 /******/ ]);

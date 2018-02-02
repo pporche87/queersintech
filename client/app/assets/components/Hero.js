@@ -12,7 +12,7 @@ class Hero extends Component {
             <h3>An inclusive community of queers and allies in technology</h3>
             <Link to="#contact" className="btn">Contact Us</Link>
           </div>
-        </div>  
+        </div>
       </div>
     );
   }

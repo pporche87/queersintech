@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import { API_KEY, 
+import { API_KEY,
   LYFT_CLIENT_ID,
   LYFT_CLIENT_SECRET,
-  LYFT_CLIENT_TOKEN 
-} from "../../../config";
+  LYFT_CLIENT_TOKEN
+} from "../../../config.js";
 import { Redirect } from 'react-router-dom';
-import lyft  from 'node-lyft';
+import lyft from 'node-lyft';
 
 
 // const getAddress = (lat, lng) =>
@@ -18,18 +18,18 @@ import lyft  from 'node-lyft';
   //       address: result[0].formatted_address
   //     };
   //   });
-  
+
   // let defaultClient = lyft.ApiClient.instance;
-  
+
   // Configure OAuth2 access token for authorization: User Authentication
   // let userAuth = defaultClient.authentications["User Authentication"];
   // userAuth.accessToken = API_KEY;
-  
+
   // let apiInstance = new lyft.UserApi();
-  
+
   // let request = new lyft.Ride("lyft", new lyft.Location(this.state.lat, this.state.lng));
   // request.destination = new lyft.Location(37.771, -122.39123);
-  
+
   // apiInstance.newRide(request).then(data => {
   //     console.log("API called successfully. Returned data: " + data);
   //   }, error => {
@@ -62,7 +62,7 @@ class Occasion extends Component {
         };
       });
   }
-  
+
   chooseOccasion(title) {
     return this.props.events.filter(
       occ => occ.title.split(" ").join("") === title
@@ -73,8 +73,8 @@ class Occasion extends Component {
   //   event.preventDefault();
 
   //   fetch(`https://api.lyft.com/oauth/authorize?client_id=${LYFT_CLIENT_ID}&scope=public%20profile%20rides.read%20rides.request%20offline&state=<state_string>&response_type=code`);
-    
-  //   // fetch('https://api.lyft.com/oauth/token', { 
+
+  //   // fetch('https://api.lyft.com/oauth/token', {
   //   //   method: 'POST',
   //   //   headers: new Headers({
   //   //     'Content-Type': 'application/json'
