@@ -1,10 +1,3 @@
-## Set Up Development Environment
-1. These are
-2. The steps that
-3. You do to
-4. Get the thing set up
-5. On your machine.
-
 ## Contributing
 1. Fork this repository.
 2. Clone the new repository to your machine by running `$ git clone https://github.com/Your-github-handle-here/queersintech.git` in your terminal.
@@ -17,6 +10,11 @@
 9. Make a pull request to the main repository.
 10. If someone on the Queers In Tech team gives you comments for improvement, fix them in a new commit and push up your code.
 
+## Set Up Development Environment
+1. After cloning the repository to your machine, run `$ npm install` in the root directory.
+2. When that is done, `$ cd client` and `$ npm install` in the client directory.
+3. Start the development server with `$ npm start`.
+
 ## Code Quality Guidelines
 * Write intention revealing code - use well named identifiers for variables, functions, css classes, etc.
 * Functions are small and serve a single purpose
@@ -24,4 +22,4 @@
 * All tests passing - aiming for 100% test coverage
 * Spaces (2), not tabs
 * No lines may be longer than 80 characters
-<!-- * Tests must be written for new features or changes to features. -->
+* Tests must be written for new features or changes to features.
