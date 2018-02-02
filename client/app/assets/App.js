@@ -10,7 +10,7 @@ import Contributors from './components/Contributors';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
 import Footer from './components/Footer'
-import Lyft from './components/Lyft';
+// import Lyft from './components/Lyft';
 import { log } from 'util';
 
 const occasions = [
@@ -41,15 +41,15 @@ const pages = {
   '#contributors': <Contributors />,
   '#blog': <Blog />,
   '#contact': <Contact />,
-  '#lyft': <Lyft events={occasions} />
+  // '#lyft': <Lyft events={occasions} />
 }
 
 const getPage = (hash) => {
   let page;
   if (hash.includes('#occasion')) {
     page = pages['#occasion/:occasionTitle']
-  } else if (hash.includes('?code=')) {
-    page = pages['#lyft']
+  // } else if (hash.includes('?code=')) {
+  //   page = pages['#lyft']
   } else {
     page = pages[hash]
   }
